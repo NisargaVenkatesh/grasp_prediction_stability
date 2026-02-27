@@ -62,8 +62,10 @@ Key toggles you can change inside the notebook:
 
 The first cell installs dependencies:
 
-pip install torch torchvision transformers h5py numpy scikit-learn tqdm pillow
+```bash
 
+pip install torch torchvision transformers h5py numpy scikit-learn tqdm pillow
+```
 Notes:
 
 PyTorch is the deep learning framework used to train the model.
@@ -75,6 +77,8 @@ h5py reads .h5 tactile/label/force files.
 How to run
 
 Clone the repository:
+
+```bash
 
 git clone https://github.com/NisargaVenkatesh/grasp_prediction_stability.git
 cd grasp_prediction_stability
@@ -94,12 +98,13 @@ Run all cells to train and evaluate.
 Outputs are saved (by default) to:
 
 ~/Downloads/runs_grasp/
+```
 
 Why frame-level metrics?
 
 In tactile grasp stability data, you often have many frames per trial but far fewer trials. Trial-level evaluation can swing a lot if you only have ~10 test trials. Frame-level evaluation answers a different (but very practical) question:
 “At any moment during the grasp, can we correctly detect stability/slip from tactile feedback?”
-That’s especially relevant if you want to trigger corrective actions in real time (e.g., increase grip force, adjust pose).
+That’s especially relevant if you want to trigger corrective actions in real time (ex: increase grip force, adjust pose).
 
 License / usage
 
