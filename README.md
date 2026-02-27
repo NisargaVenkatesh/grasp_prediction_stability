@@ -65,6 +65,7 @@ The first cell installs dependencies:
 ```bash
 pip install torch torchvision transformers h5py numpy scikit-learn tqdm pillow
 
+```bash
 Notes:
 
 PyTorch is the deep learning framework used to train the model.
