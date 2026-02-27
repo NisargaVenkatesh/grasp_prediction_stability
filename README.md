@@ -82,7 +82,7 @@ Clone the repository:
 
 git clone https://github.com/NisargaVenkatesh/grasp_prediction_stability.git
 cd grasp_prediction_stability
-
+```
 Open the notebook:
 
 jupyter notebook
@@ -98,7 +98,7 @@ Run all cells to train and evaluate.
 Outputs are saved (by default) to:
 
 ~/Downloads/runs_grasp/
-```
+
 
 Why frame-level metrics?
 
